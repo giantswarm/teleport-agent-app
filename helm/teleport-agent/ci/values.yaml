@@ -1,0 +1,3 @@
+authToken: "thisisjustatest"
+proxyAddr: "teleport.example.com:443"
+kubeClusterName: "cluster01"
