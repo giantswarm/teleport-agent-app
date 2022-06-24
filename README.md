@@ -1,11 +1,9 @@
-[![CircleCI](https://circleci.com/gh/giantswarm/{APP-NAME}.svg?style=shield)](https://circleci.com/gh/giantswarm/{APP-NAME})
+[![CircleCI](https://circleci.com/gh/giantswarm/teleport-agent-app.svg?style=shield)](https://circleci.com/gh/giantswarm/teleport-agent-app)
 
-[Read me after cloning this template (GS staff only)](https://intranet.giantswarm.io/docs/dev-and-releng/app-developer-processes/adding_app_to_appcatalog/)
+# teleport-agent chart
 
-# {APP-NAME} chart
-
-Giant Swarm offers a {APP-NAME} App which can be installed in workload clusters.
-Here we define the {APP-NAME} chart with its templates and default configuration.
+Giant Swarm offers a teleport-agent App which can be installed in management and workload clusters.
+Here we define the teleport-agent chart with its templates and default configuration.
 
 **What is this app?**
 
