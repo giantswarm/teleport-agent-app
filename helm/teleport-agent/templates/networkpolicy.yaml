@@ -1,0 +1,26 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+{{- if .Values.extraLabels.config }}
+  labels:
+  {{- toYaml .Values.extraLabels.config | nindent 4 }}
+{{- end }}
+  {{- if .Values.annotations.config }}
+  annotations:
+    {{- toYaml .Values.annotations.config | nindent 4 }}
+  {{- end }}
+spec:
+  podSelector:
+    matchLabels:
+      app: {{ .Release.Name }}
+  ingress:
+    - ports:
+        - port: 3000
+          protocol: TCP
+  egress:
+    - {}
+  policyTypes:
+    - Egress
+    - Ingress
