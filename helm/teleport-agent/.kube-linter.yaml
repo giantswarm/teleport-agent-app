@@ -5,3 +5,6 @@ checks:
   - "unset-memory-requirements"
   - "required-label-owner"
   - "required-annotation-email"
+  - "minimum-three-replicas"
+  - "no-rolling-update-strategy"
+  - "use-namespace"

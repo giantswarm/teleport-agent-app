@@ -1,7 +1,3 @@
-#
-# Warning to maintainers, any changes to this file that are not specific to the Deployment need to also be duplicated
-# in the statefulset.yaml file.
-#
 {{- if not .Values.storage.enabled }}
 {{- $replicaCount := (coalesce .Values.replicaCount .Values.highAvailability.replicaCount "1") }}
 apiVersion: apps/v1
