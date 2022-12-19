@@ -55,13 +55,6 @@ This app has been tested to work with the following workload cluster release ver
 
 - _add release version_
 
-## Limitations
-
-Some apps have restrictions on how they can be deployed.
-Not following these limitations will most likely result in a broken deployment.
-
-- _add limitation_
-
 ## Credit
 
 - {APP HELM REPOSITORY}
